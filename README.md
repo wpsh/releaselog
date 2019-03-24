@@ -26,11 +26,29 @@ const releaselog = require('@wpsh/releaselog').default;
 
 releaselog('kasparsd/widget-context-wporg') 
   .then(changelog => {
-    fs.writeFile('changelog.txt', `# Changelog\n\n${changelog}`)
+    fs.writeFile('CHANGELOG.md', `# Changelog\n\n${changelog}`)
   })
   .catch(err => console.error(err));
 ```
 
+will create `CHANGELOG.md` with the following contents:
+
+```
+# Changelog
+
+## Version 1.1.0 (2018-06-13)
+
+- Fix URL matching for URLs with query strings.
+- Introduce unit tests for the URL context.
+
+## Version 1.0.7 (2018-06-05)
+
+- Mark as tested with WordPress 4.9.6.
+- Use the localisation service provided by [WP.org](https://translate.wordpress.org/projects/wp-plugins/widget-context).
+- Support for Composer.
+
+[..]
+```
 
 ## Credits
 
