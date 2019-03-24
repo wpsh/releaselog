@@ -1,5 +1,6 @@
 # Releaselog
 
+[![npm version](https://img.shields.io/npm/v/@wpsh/releaselog.svg)](https://www.npmjs.com/package/@wpsh/releaselog)
 [![Build Status](https://travis-ci.com/wpsh/releaselog.svg?branch=master)](https://travis-ci.com/wpsh/releaselog)
 
 Automatically build project `changelog.txt` from [GitHub release notes](https://help.github.com/en/articles/creating-releases).
