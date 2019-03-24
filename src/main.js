@@ -23,5 +23,5 @@ export function formatReleases (releases, formatter) {
 export default function releaselog (repoSlug, formatter = formatRelease) {
   const apiUrl = buildApiUrl(repoSlug)
 
-  return get(apiUrl).then(response => formatReleases(response.data, formatter));
+  return get(apiUrl).then(response => formatReleases(response.data, formatter))
 }
