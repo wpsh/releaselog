@@ -16,6 +16,22 @@ npm install --save-dev @wpsh/releaselog
 ```
 
 
+## Usage
+
+As a [Node module](https://nodejs.org/api/modules.html):
+
+```js
+const fs = require('fs');
+const releaselog = require('@wpsh/releaselog').default;
+
+releaselog('kasparsd/widget-context-wporg') 
+  .then(changelog => fs.writeFile('changelog.txt', changelog))
+  .catch(err => console.error(err));
+```
+
+
+
+
 ## Credits
 
 Created by [Kaspars Dambis](https://kaspars.net).
