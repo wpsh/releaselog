@@ -5,6 +5,12 @@
   "homepage": "https://github.com/wpsh/releaselog#readme",
   "repository": "github:wpsh/releaselog",
   "bugs": "https://github.com/wpsh/releaselog/issues",
+  "keywords": [
+    "github",
+    "changelog",
+    "wordpress",
+    "readme"
+  ],
   "files": [
     "src",
     "dist/*.js"
