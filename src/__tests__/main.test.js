@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios from 'axios'
 import changelogBuilder from '../main.js'
 
-jest.mock('axios');
+jest.mock('axios')
 
 const apiResponseMock = [
   {
@@ -28,10 +28,10 @@ const apiResponseMock = [
     "published_at": "2018-10-16T07:27:19Z",
     "body": "- Add developer tools for deploying to WP.org manually."
   }
-];
+]
 
 describe('buildChangelog', () => {
-  axios.get = jest.fn().mockResolvedValue(apiResponseMock);
+  axios.get = jest.fn().mockResolvedValue(apiResponseMock)
 
   it('can extract and format changelog', async () => {
     const changelog = await changelogBuilder('dummy/repo')
@@ -41,7 +41,7 @@ describe('buildChangelog', () => {
 
   it('can use custom formatter', async () => {
     const formatter = (entry) => {
-      return entry.name;
+      return entry.name
     }
 
     const changelog = await changelogBuilder('dummy/repo', formatter)
