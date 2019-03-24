@@ -30,7 +30,7 @@ const apiResponseMock = [
   }
 ]
 
-describe('buildChangelog', () => {
+describe('releaselog', () => {
   axios.get = jest.fn().mockResolvedValue(apiResponseMock)
 
   it('can extract and format changelog', async () => {
