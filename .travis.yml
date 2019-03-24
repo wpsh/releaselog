@@ -29,3 +29,4 @@ cache: npm
 branches:
   only:
   - master
+  - /^\d+\.\d+(\.\d+)?(-\S*)?$/
