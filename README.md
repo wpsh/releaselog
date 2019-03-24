@@ -1,5 +1,7 @@
 # Releaselog
 
+[![Build Status](https://travis-ci.com/wpsh/releaselog.svg?branch=master)](https://travis-ci.com/wpsh/releaselog)
+
 Automatically build project `changelog.txt` from [GitHub release notes](https://help.github.com/en/articles/creating-releases).
 
 
