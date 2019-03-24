@@ -26,7 +26,9 @@ const releaselog = require('@wpsh/releaselog').default;
 
 releaselog('kasparsd/widget-context-wporg') 
   .then(changelog => {
-    fs.writeFile('CHANGELOG.md', `# Changelog\n\n${changelog}`)
+    fs.writeFile('CHANGELOG.md', `# Changelog\n\n${changelog}`, err => {
+      if (err) throw err;
+    });
   })
   .catch(err => console.error(err));
 ```
