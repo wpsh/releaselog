@@ -1,6 +1,6 @@
 {
   "name": "@wpsh/releaselog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create changelog out of GitHub releases",
   "homepage": "https://github.com/wpsh/releaselog#readme",
   "repository": "github:wpsh/releaselog",
