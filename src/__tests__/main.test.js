@@ -38,7 +38,7 @@ describe('releaselog', () => {
   it('can extract and format changelog', async () => {
     const changelog = await changelogBuilder('dummy/repo')
 
-    expect(changelog).toBe('## Version 1.6.0 (2019-2-19)\n\n- One log.\r\n\r\n- Mark as tested with WordPress 5.1.\n\n## Version 0.3.0 (2018-10-6)\n\n- Mark as tested with WordPress 5.0.\r\n\r\n- Always post the two-factor login.')
+    expect(changelog).toBe('## Version 1.6.0 (2019-03-19)\n\n- One log.\r\n\r\n- Mark as tested with WordPress 5.1.\n\n## Version 0.3.0 (2018-11-06)\n\n- Mark as tested with WordPress 5.0.\r\n\r\n- Always post the two-factor login.')
   })
 
   it('can use custom formatter', async () => {

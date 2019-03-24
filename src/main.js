@@ -9,8 +9,8 @@ export function formatRelease (release) {
 
   const releaseDateFormatted = [
     releaseDate.getFullYear(),
-    releaseDate.getMonth(),
-    releaseDate.getDate()
+    String(releaseDate.getMonth() + 1).padStart(2, '0'),
+    String(releaseDate.getDate()).padStart(2, '0')
   ].join('-')
 
   return `## ${release.name} (${releaseDateFormatted})\n\n${release.body}`
